@@ -1,0 +1,25 @@
+<div class="card-panel hoverable">
+  <div class="row">
+    <form class="col s12" (ngSubmit)="saveCostParameter()">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Enter a operator name" id="first_name" type="text" class="validate" [(ngModel)]="costParameter.operatorName" name="phoneInfo.operatorName">
+          <label for="first_name">Operator</label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Enter a Country" id="first_name" type="text" class="validate" [(ngModel)]="costParameter.country" name="phoneInfo.country">
+          <label for="first_name">Country</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Enter value to cost" id="first_name" type="number" class="validate" [(ngModel)]="costParameter.costForSecond" name="phoneInfo.costForSecond">
+          <label for="first_name">Cost for second</label>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn btn-floating pulse" type="submit" name="button"><i class="material-icons">check_circle</i></button>
+      </div>
+    </form>
+  </div>
+</div>
